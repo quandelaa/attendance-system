@@ -25,5 +25,5 @@ The "faces" folder isn't included in this repository, so create one titled "face
 
 ---
 
-NOT vibecoded whatsoever,
+NOT vibecoded whatsoever.
 Authored 100% by quandelaa 🐒
