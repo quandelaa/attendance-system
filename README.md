@@ -4,9 +4,7 @@ An extremely simple attendance system built using Python.
 
 ## Features
 
-As you might realize these libraries might not be compatible with eachother if downloaded to last release but I'm too lazy to create requirements.txt, so ehehehhehehehehe
-
-- Face detection using MediaPipe
+- Face detection using MediaPipe solutions attribute
 - Face recognition using deepface with ArcFace model
 - Hand landmark detection though serves no purpose for now (maybe forever)
 - SQLite database for recording student data and attendance data
