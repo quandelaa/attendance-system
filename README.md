@@ -26,5 +26,5 @@ the "faces" folder isn't included in this repository so make one before running
 
 ---
 
-NOT vibecoded
+NOT vibecoded,
 authored 100% by quandelaa
