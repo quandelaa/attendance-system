@@ -1,16 +1,17 @@
 # Attendance System
 
-An extremely simple attendance system built using Python
+An extremely simple attendance system built using Python.
 
-## What's Included
+## Features
 
-- Face detection using mediapipe
-- Face recognition using deepface with arcface model
+As you might realize these libraries might not be compatible with eachother if downloaded to last release but I'm too lazy to create requirements.txt, so ehehehhehehehehe
+
+- Face detection using MediaPipe
+- Face recognition using deepface with ArcFace model
 - Hand landmark detection though serves no purpose for now (maybe forever)
 - SQLite database for recording student data and attendance data
 - Simple TTS feedback using pyttsx3
 - Tkinter GUI for managing students and viewing attendance data (but the attendance data is printed into terminal hehehehhehe)
-- Duplicate attendance prevention, a student can only be logged once per day
 
 ## How It Works
 
@@ -22,9 +23,9 @@ An extremely simple attendance system built using Python
 
 ## Notes
 
-The "faces" folder isn't included in this repository
+The "faces" folder isn't included in this repository, so create one titled "faces" before running
 
 ---
 
 NOT vibecoded whatsoever,
-Authored 100% by quandelaa
+Authored 100% by quandelaa 🐒
