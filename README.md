@@ -18,4 +18,13 @@ a very simple attendance system built using Python
 2. when a face is detected, you can basically verify the face by clicking the "Verify Student" button
 3. then, deepface compares the detected face against registered faces in the database (a folder "faces")
 4. if a match is found, the student is logged as present for the day with a pyttsx confirmation
-5. but if no match is found, the sys
+5. but if no match is found, the system announces that it was unable to recognize the face and moves on
+
+## notes
+
+the "faces" folder isn't included in this repository so make one before running
+
+---
+
+NOT vibecoded
+authored 100% by quandelaa
