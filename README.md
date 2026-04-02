@@ -1,30 +1,30 @@
-# attendance system
+# Attendance System
 
-a very simple attendance system built using Python
+An extremely simple attendance system built using Python
 
-## what's included
+## What's Included
 
-- face detection using mediapipe
-- face recognition using deepface with arcface model
-- hand landmark detection though serves no purpose for now (maybe forever)
-- sqlite database for recording student data and attendance data
-- simple text-to-speech feedback using pyttsx3
-- tkinter GUI for managing students and viewing attendance data (but the attendance data is printed into terminal hehehehhehe)
-- duplicate attendance prevention, a student can only be logged once per day
+- Face detection using mediapipe
+- Face recognition using deepface with arcface model
+- Hand landmark detection though serves no purpose for now (maybe forever)
+- SQLite database for recording student data and attendance data
+- Simple TTS feedback using pyttsx3
+- Tkinter GUI for managing students and viewing attendance data (but the attendance data is printed into terminal hehehehhehe)
+- Duplicate attendance prevention, a student can only be logged once per day
 
-## how it works
+## How It Works
 
-1. the webcam continuously scans for faces
-2. when a face is detected, you can basically verify the face by clicking the "Verify Student" button
-3. then, deepface compares the detected face against registered faces in the database (a folder "faces")
-4. if a match is found, the student is logged as present for the day with a pyttsx confirmation
-5. but if no match is found, the system announces that it was unable to recognize the face and moves on
+1. The webcam continuously scans for faces
+2. When a face is detected, you can verify the detected face by clicking the "Verify Student" button (when face is in frame/detected)
+3. Then, DeepFace compares the detected face against registered faces in the database (a folder, "faces")
+4. If a match is found, the student is logged as present for the day with a TTS confirmation
+5. But if no match is found, the system announces that it was unable to recognize the face and moves on
 
-## notes
+## Notes
 
-the "faces" folder isn't included in this repository so make one before running
+The "faces" folder isn't included in this repository
 
 ---
 
-NOT vibecoded,
-authored 100% by quandelaa
+NOT vibecoded whatsoever,
+Authored 100% by quandelaa
