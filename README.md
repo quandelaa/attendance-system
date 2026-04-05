@@ -7,6 +7,7 @@ An attendance system project that uses face recognition. Built with Python.
 - Face detection running at all times via webcam using MediaPipe
 - Face recognition using DeepFace (specifically the ArcFace model)
 - Adding students with their credentials (name, age, unique student id)
+- Disallows adding student if the inputted student id has a duplicate
 - Automatic attendance logging and prevents duplicate entries per day
 - TTS feedback for logging in or adding students
 - SQLite database for keeping record of student data and attendance data
@@ -35,19 +36,16 @@ Fill in the student's credentials (all required), then click the "Capture" butto
 
 Click the "Verify Student" button, and if the system detects a face from the current webcam frame, it will take the same screenshot as when registering a student, and compares it against all registered faces in the `faces/` folder using ArcFace.
 
-![Verify student screen placeholder](https://placehold.co/800x450?text=Verify+Student+Screen)
-
 ### 3. Match Found
 
 If a match is found, the student's name is announced via TTS and their attendance is logged with the current timestamp (date and time). If they have already been logged today, the system will notify you instead of creating a duplicate entry.
-
-![Successful match and attendance logged placeholder](https://placehold.co/800x450?text=Attendance+Logged+Successfully)
 
 ### 4. Viewing Attendance Records
 
 - Click the "Get All Students" to print all registered students' credentials to the console.
 - Enter a student ID and click the "Get Student Attendance Data" button to print that student's full attendance history.
 
+![Attendance records view placeholder](https://placehold.co/800x450?text=Attendance+Records+View)
 ![Attendance records view placeholder](https://placehold.co/800x450?text=Attendance+Records+View)
 
 ## Usage
