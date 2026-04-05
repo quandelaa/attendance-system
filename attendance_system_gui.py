@@ -87,8 +87,11 @@ class AttendanceSystem:
         if self.face_detections is not None and not attendance_system.find_face_running.is_set():
             verify_face_thread = threading.Thread(target=find_matching_face, args=(self.face_crop.copy(),), daemon=True)        
             verify_face_thread.start()
-        else:
-            tts_thread = threading.Thread(target=self.tts, daemon=True, args=("Did not detect any faces or, a previous verify scan is still running",))
+        elif self.face_detections is None:
+            tts_thread = threading.Thread(target=self.tts, daemon=True, args=("No faces seems to match",))
+            tts_thread.start()
+        elif attendance_system.find_face_running.is_set():
+            tts_thread = threading.Thread(target=self.tts, daemon=True, args=("A previous verify scan is still running, please wait..",))
             tts_thread.start()
 
     def save_image(self, face_crop):
@@ -174,7 +177,13 @@ class AttendanceSystem:
 
     def get_student_att_data(self):
         try:
-            print(get_student(int(self.student_id_add_data.get())))
+            data = get_student(int(self.student_id_add_data.get())) 
+            
+            if len(data) == 0:
+                print("Student id hasn't been registered!")
+                return
+                
+            print(data)
         except Exception as e:
             self.capture_msg(f"Failed because {e}")
             return
@@ -191,7 +200,7 @@ class AttendanceSystem:
             tts_engine.say(subject)
             tts_engine.runAndWait()
         except RuntimeError:
-            self.capture_msg("There is still an ongoing TTS")
+            self.capture_msg("There is still an ongoing TTS, please wait..")
             return
 
     def att_system_thread(self):
