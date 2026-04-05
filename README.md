@@ -15,7 +15,7 @@ An attendance system project that uses face recognition. Built with Python.
 
 ## Requirements
 
-- Python 3.12>=
+- Python >= 3.12
 - Working webcam
 
 Install dependencies:
@@ -69,9 +69,10 @@ The system uses a local SQLite database `attendance.db` with two tables:
 
 - The `faces/` directory must exist before running (create it manually if not yet)
 - Face images are saved as `FirstName_LastName.png` based on the name entered
-- TTS feedback runs in a seperate thread to avoid blocking the UI
+- TTS feedback runs in a separate thread to avoid blocking the UI
 - Pretty bad TTS feedback whenever there is an error.. Mb
 
 ---
 
 **NOT vibecoded. Entirely by quandelaa**
+**Feel free to PR**
