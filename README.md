@@ -30,7 +30,7 @@ pip install opencv-python mediapipe deepface pillow pyttsx3
 
 Fill in the student's credentials (all required), then click the "Capture" button. If the system detects a face from the webcam, it will save a screenshot into the `faces/` folder alongside their name as the file name. 
 
-![Student registration screen placeholder](https://placehold.co/800x450?text=Student+Registration+Screen)
+<img width="1016" height="512" alt="SHIDKDKS" src="https://github.com/user-attachments/assets/093f9aaf-4487-433d-8c4e-b2604286f557" />
 
 ### 2. Verifying / Logging Attendance
 
@@ -43,10 +43,10 @@ If a match is found, the student's name is announced via TTS and their attendanc
 ### 4. Viewing Attendance Records
 
 - Click the "Get All Students" to print all registered students' credentials to the console.
+<img width="207" height="21" alt="allstudents" src="https://github.com/user-attachments/assets/451c9599-17c8-4de8-b034-311367e54797" />
+  
 - Enter a student ID and click the "Get Student Attendance Data" button to print that student's full attendance history.
-
-![Attendance records view placeholder](https://placehold.co/800x450?text=Attendance+Records+View)
-![Attendance records view placeholder](https://placehold.co/800x450?text=Attendance+Records+View)
+<img width="225" height="18" alt="studnetid" src="https://github.com/user-attachments/assets/082a33a9-6238-46c3-8401-faec87cc5fbf" />
 
 ## Usage
 
