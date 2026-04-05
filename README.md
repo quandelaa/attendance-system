@@ -5,8 +5,8 @@ An attendance system project that uses face recognition. Built with Python.
 ## Features
 
 - Face detection running at all times via webcam using MediaPipe
-- Face recognition using DeepFace (specificaaly the ArcFace model)
-- Adding students with credentials (name, age, unique student id)
+- Face recognition using DeepFace (specifically the ArcFace model)
+- Adding students with their credentials (name, age, unique student id)
 - Automatic attendance logging and prevents duplicate entries per day
 - TTS feedback for logging in or adding students
 - SQLite database for keeping record of student data and attendance data
@@ -14,7 +14,7 @@ An attendance system project that uses face recognition. Built with Python.
 
 ## Requirements
 
-- Python 3.12>
+- Python 3.12>=
 - Working webcam
 
 Install dependencies:
@@ -27,13 +27,13 @@ pip install opencv-python mediapipe deepface pillow pyttsx3
 
 ### 1. Registering a Student
 
-Fill in the student's credentials (all required), then click the "Capture" button. If the system detects a face from the webcam, it will save a screenshot into the `faces/` folder alongside their credentials. 
+Fill in the student's credentials (all required), then click the "Capture" button. If the system detects a face from the webcam, it will save a screenshot into the `faces/` folder alongside their name as the file name. 
 
 ![Student registration screen placeholder](https://placehold.co/800x450?text=Student+Registration+Screen)
 
 ### 2. Verifying / Logging Attendance
 
-Click the "Verify Student" button, and if the system detects a face from the current webcam frame, it will take the same screenshot as when registering a student, and compares it against all registered faces in the `faces/` folder using ArcFace
+Click the "Verify Student" button, and if the system detects a face from the current webcam frame, it will take the same screenshot as when registering a student, and compares it against all registered faces in the `faces/` folder using ArcFace.
 
 ![Verify student screen placeholder](https://placehold.co/800x450?text=Verify+Student+Screen)
 
@@ -70,3 +70,7 @@ The system uses a local SQLite database `attendance.db` with two tables:
 - The `faces/` directory must exist before running (create it manually if not yet)
 - Face images are saved as `FirstName_LastName.png` based on the name entered
 - TTS feedback runs in a seperate thread to avoid blocking the UI
+
+---
+
+**NOT vibecoded. Entirely by quandelaa**
