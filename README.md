@@ -43,9 +43,11 @@ If a match is found, the student's name is announced via TTS and their attendanc
 ### 4. Viewing Attendance Records
 
 - Click the "Get All Students" to print all registered students' credentials to the console.
+ex:
 <img width="207" height="21" alt="allstudents" src="https://github.com/user-attachments/assets/451c9599-17c8-4de8-b034-311367e54797" />
   
 - Enter a student ID and click the "Get Student Attendance Data" button to print that student's full attendance history.
+ex:
 <img width="225" height="18" alt="studnetid" src="https://github.com/user-attachments/assets/082a33a9-6238-46c3-8401-faec87cc5fbf" />
 
 ## Usage
@@ -68,6 +70,7 @@ The system uses a local SQLite database `attendance.db` with two tables:
 - The `faces/` directory must exist before running (create it manually if not yet)
 - Face images are saved as `FirstName_LastName.png` based on the name entered
 - TTS feedback runs in a seperate thread to avoid blocking the UI
+- Pretty bad TTS feedback whenever there is an error.. Mb
 
 ---
 
