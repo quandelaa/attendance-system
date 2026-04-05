@@ -32,9 +32,10 @@ def find_matching_face(face):
     try:
         find_face_running.set()
 
-        results = DeepFace.find(img_path=face, db_path="attendance_system/faces", model_name="ArcFace", enforce_detection=False, detector_backend="skip", distance_metric="cosine")
+        results = DeepFace.find(img_path=face, db_path="faces", model_name="ArcFace", enforce_detection=False, detector_backend="skip", distance_metric="cosine")
     except Exception as e:
-        print(f"No item found in db {e}")
+        print(f"No item found in db {e}; or db faces still havent been made")
+        find_face_running.clear()
         return
         
     find_face_running.clear()
