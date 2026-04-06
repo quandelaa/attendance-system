@@ -1,4 +1,4 @@
-# Attendance System
+<img width="642" height="517" alt="webcamss" src="https://github.com/user-attachments/assets/0ce58046-6cb1-4f04-97ee-5e4f1e635f36" /># Attendance System
 
 An attendance system project that uses face recognition. Built with Python.
 
@@ -64,11 +64,10 @@ The system uses a local SQLite database `attendance.db` with two tables:
 ## Screenshots
 
 - Attendance System Manager window:
+<img width="374" height="508" alt="attendance_sstem_anager" src="https://github.com/user-attachments/assets/e129d8b9-2919-4f50-b63f-f54e5f33155f" />
 
 - Webcam window:
-
-- Together:
-
+<img width="642" height="517" alt="webcamss" src="https://github.com/user-attachments/assets/7d88e374-b800-43d7-abc5-e0791855f6e3" />
 
 ## Notes
 
