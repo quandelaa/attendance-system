@@ -1,7 +1,5 @@
-# attendance_system_gui.py of the attendance system
-
 import os
-os.environ["TF_USE_LEGACY_KERAS"] = "1"
+os.environ["TF_USE_LEGACY_KERAS"] = "1" #for deepface
 
 from attendance_system import find_matching_face, get_data_func, reset_findings, attendance_system_func
 from student_db import add_student, init, get_students, get_student_id_for_logging, get_student
@@ -37,7 +35,7 @@ class AttendanceSystem:
         self.setup_gui()
 
     def setup_gui(self):
-        self.window.title("attendance System")
+        self.window.title("Attendance System Manager")
         self.window.config(background="#000000")
         
         name_text = tk.Label(self.window, text="Name: ", font=self.font, bg=self.MAIN_COLOR, fg=self.SEC_COLOR)
