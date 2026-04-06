@@ -1,4 +1,4 @@
-<img width="642" height="517" alt="webcamss" src="https://github.com/user-attachments/assets/0ce58046-6cb1-4f04-97ee-5e4f1e635f36" /># Attendance System
+# Attendance System
 
 An attendance system project that uses face recognition. Built with Python.
 
