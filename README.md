@@ -6,15 +6,11 @@ An attendance system project that uses face recognition. Built with Python.
 
 - Face detection running at all times via webcam using MediaPipe
 - Face recognition using DeepFace (specifically the ArcFace model)
-
 - Tkinter GUI
-
 - Adding students with their credentials (name, age, unique student id)
 - SQLite database for keeping record of student data and attendance data
-
 - Automatic attendance logging and prevents duplicate entries per day
 - TTS feedback for logging in or adding students
-
 - Disallows adding a student if the inputted "student id" or "age" is not more than 0
 - Disallows adding a student if the inputted "student id" has a duplicate
 
@@ -81,8 +77,5 @@ The system uses a local SQLite database `attendance.db` with two tables:
 
 ---
 
-**NOT vibecoded. Entirely by quandelaa.**
-
----
-
-**There may still be some bugs (and TTS is still pretty unclear), so I'll appreciate contributions!!**
+- **NOT vibecoded. Entirely by quandelaa.**
+- **There may still be some bugs (and TTS is still pretty unclear), so I'll appreciate contributions!!**
