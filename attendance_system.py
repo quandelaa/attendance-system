@@ -1,11 +1,10 @@
-# attendance_system.py of the attendance system
-
 import os
-os.environ["TF_USE_LEGACY_KERAS"] = "1"
+os.environ["TF_USE_LEGACY_KERAS"] = "1" # for deepface
 
 import cv2 as cv
 import mediapipe as mp
 from deepface import DeepFace
+from pathlib import Path
 import threading
 
 face_detections = None
@@ -32,9 +31,9 @@ def find_matching_face(face):
     try:
         find_face_running.set()
 
-        results = DeepFace.find(img_path=face, db_path="faces", model_name="ArcFace", enforce_detection=False, detector_backend="skip", distance_metric="cosine")
+        results = DeepFace.find(img_path=face, db_path=Path(__file__).parent / "faces", model_name="ArcFace", enforce_detection=False, detector_backend="skip", distance_metric="cosine")
     except Exception as e:
-        print(f"No item found in db {e}; or db faces still havent been made")
+        print(f"No item found in folder or folder 'faces' still havent been made; {e}")
         find_face_running.clear()
         return
         
