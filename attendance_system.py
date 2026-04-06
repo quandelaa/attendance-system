@@ -1,5 +1,5 @@
 import os
-os.environ["TF_USE_LEGACY_KERAS"] = "1" # for deepface
+os.environ["TF_USE_LEGACY_KERAS"] = "1" #for deepface
 
 import cv2 as cv
 import mediapipe as mp
