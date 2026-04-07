@@ -68,7 +68,6 @@ The system uses a local SQLite database `attendance.db` with two tables:
 
 - Webcam window:
 <img width="642" height="517" alt="webcamss" src="https://github.com/user-attachments/assets/7d88e374-b800-43d7-abc5-e0791855f6e3" />
-lol brian kernighan
 
 ## Notes
 
